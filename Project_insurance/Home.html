@@ -1,0 +1,139 @@
+<!Doctype html>
+<html>
+<head>
+    <title>Insurance Home Page</title>
+    <link rel="stylesheet" href="styles/Homestyle.css">
+    <link rel="stylesheet" href="">
+</head>
+
+<body>
+        <div class="wrapper">
+<header>
+    <img class="logoImage" src="Images/logo2.jpg" alt="Logo Image">
+    <div class ="headingRate">Rates Insurance</div>
+    <div class ="titleHeading">We've got you under our wing. Without it, no insurance is complete.</div>
+</header>
+
+<nav class="homeNav">
+        <ul class="navList">
+        <li><a href="Home.html">Home</a></li>
+        <li><a href="">Home Insurance</a></li>
+        <li><a href="AutoInsuarnce.html">Auto Insurance</a></li>
+        <li><a>Contact Us </a></li>
+        <li><a>Blog</a></li>
+        <li><a href="Faq.html">FAQ</a></li>
+        </ul>
+</nav>
+
+<main>
+
+    <div  class="slideshow-container">
+
+<div class="mySlides fade">
+      <a href =""> <img class="homeScreenImage" src="Images/home_insurance2.jpg" alt="Home Insurance" > </a> 
+
+</div>
+
+<div class="mySlides fade">
+        <a href ="AutoInsuarnce.html">  <img class="homeScreenImage" src="Images/car_insurance.jpg" alt="Vehicle Insurance" > </a>
+</div>
+
+<div class="mySlides fade">
+        <a href =""> <img class="homeScreenImage" src="Images/contact2.png" alt="Contact US" "> </a>
+</div>
+
+<div class="mySlides fade">
+        <a href ="">  <img class="homeScreenImage" src="Images/BLOG2.jpg" alt="BLOG" > </a>
+</div>
+
+<div class="mySlides fade">
+        <a href ="Faq.html">  <img class="homeScreenImage" src="Images/faq.png" alt="FAQ"> </a>
+        </div>
+
+        
+<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+<a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+    </div>
+
+
+    <div class="dotNavigation"> 
+                <span class="dot" onclick="currentSlide(1)"></span> 
+                <span class="dot" onclick="currentSlide(2)"></span> 
+                <span class="dot" onclick="currentSlide(3)"></span> 
+                <span class="dot" onclick="currentSlide(4)"></span> 
+                <span class="dot" onclick="currentSlide(5)"></span> 
+        
+        </div>
+
+        
+
+
+</main>
+
+
+<footer>
+                
+        </footer>
+</div>
+
+
+<script>
+
+var slideIndex = 0;
+showSlides();
+
+function plusSlides(n) {
+  showSlidesmanual(slideIndex += n);
+}
+
+
+
+
+function currentSlide(n) {
+  showSlidesmanual(slideIndex = n);
+}
+  
+  function showSlidesmanual(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+}
+
+function showSlides() {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";  
+  }
+  slideIndex++;
+  if (slideIndex > slides.length) {slideIndex = 1}    
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+  setTimeout(showSlides, 6000); // Change image every 6 seconds
+
+}
+
+
+
+
+                </script>
+               
+</body>
+
+
+</html>

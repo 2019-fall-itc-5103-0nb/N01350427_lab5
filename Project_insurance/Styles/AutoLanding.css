@@ -1,0 +1,54 @@
+
+main{
+    width: 70%;
+    float:left;
+    height: 519px;
+}
+
+aside{
+
+    width: 26%;
+    float:right;
+    background-color: #00C3B5;
+    height: 260px;
+
+}
+
+.quoteNow{
+color: white;
+font-weight: bold;
+font-size: 50px;
+padding-left: 40px;
+}
+
+.quoteNow_now{
+    color: white;
+    font-weight: bold;
+    font-size: 50px;
+    padding-left: 68px;
+
+}
+
+select{
+    width : 173px;
+    height : 20px;
+
+
+}
+
+.goImage{
+
+    height: 63px;
+    width: 103px;
+    margin-left: 75px;
+
+    
+
+}
+
+.quoteInput {
+    padding-left: 45px;}
+
+.postalInput{ 
+    margin-bottom: 15px;}
+   
